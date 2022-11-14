@@ -3,5 +3,29 @@ package org.iesalandalus.programacion.reinaajedrez.modelo;
 public class Posicion {
 	private int fila;
 	private char columna;
+	public int getFila() {
+		return fila;
+	}
+	public void setFila(int fila) {
+		
+		if(fila >= 1 && fila <= 8) {
+		this.fila = fila;}
+		else {
+		   throw new IllegalArgumentException("la fila es incorrecta");
+		}
+	}
+	public char getColumna() {
+		return columna;
+	}
+	public void setColumna(char columna) {
+		if(columna >= 'a' && columna <= 'h' ) {
+			this.columna = columna;
+		}
+		else {
+			throw new IllegalArgumentException("la columna es incorrecta");
+		}
+	}
+	
+	
 	
 }

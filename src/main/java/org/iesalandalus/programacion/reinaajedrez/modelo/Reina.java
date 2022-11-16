@@ -11,7 +11,16 @@ public class Reina {
 	
 	}
 
-	
+	public Reina(Color color){
+		this.color = color;
+		if(color.toString().equalsIgnoreCase("Blanco")) {
+			this.posicion = new Posicion(1, 'd');
+			
+		}
+		else {
+			this.posicion = new Posicion(8	, 'd');
+		}
+	}
 	
 	public Reina(Color color, Posicion posicion){
 		
